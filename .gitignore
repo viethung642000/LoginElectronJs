@@ -1,0 +1,5 @@
+node_modules
+*.db
+DatabaseSQLite.db
+dist
+package-lock.json

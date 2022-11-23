@@ -1,0 +1,36 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.0",
+    "electron-builder": "^23.6.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "build": {
+    "appId": "com.info.app",
+    "productName": "Login Info App",
+    "win": {
+      "target": [
+        "NSIS"
+      ],
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.0.0",
+    "sqlite3": "^5.1.2"
+  }
+}
